@@ -1,0 +1,111 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+.container_12{
+	padding-top: 42px;
+	padding-bottom: 42px;
+}
+body{
+ background-color: #2B2E36;
+}
+.aside{
+	background-color:rgb(137,48,54);
+	width:220px;
+	height:110px;
+	border-bottom: 1px solid rgb(215,138,143);
+
+}
+.logo{
+	font-family:"Steelfish Rg";
+	font-size:30px;
+	line-height:120%;
+	font-weight:bold;
+	text-align:center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-top: 18px;
+
+}
+.logo a{
+	text-decoration: none;
+	color:rgb(255,255,255);
+}
+.logo_sub{
+	font-family:"Steelfish Rg";
+	font-size:22px;
+	color:rgb(255,255,255);
+	text-align:center;
+	margin-top:-20px;
+
+}
+.aside_menu{
+	background-color:rgb(158,55,62);
+	width:220px;
+	height:1026px;
+	
+}
+
+.category{
+	background-color:rgb(158,55,62);
+	width:220px;
+	height:42px;
+	border-bottom: 1px solid rgb(215,138,143);
+}
+h1.cat_title{
+	font-family:"cabin regular";
+	font-size:14px;
+	line-height:120%;
+	color:rgb(255,255,255);
+	text-align:left;
+	padding: 13px 10px;
+	text-transform: uppercase;
+
+}
+.header{
+	background-color:rgb(84,135,126);
+	width:699px;
+	height:55px;
+	display: block;	
+}
+
+ul.cat_list{
+	list-style-type:none;
+	border-bottom: 1px solid rgb(215,138,143);
+}
+
+ul.cat_list li{
+	margin:0px;
+	padding: 5px 10px ;
+	width:160px; 
+	
+}
+
+ul.cat_list li a{
+	font-family:Cabin;
+	font-size:13px;
+	line-height:120%;
+	color:rgb(255,255,255);
+	text-align:left;
+	text-decoration:none;
+}
+
+ul.cat_list li :hover{
+	background-color:rgb(43,46,54);
+	display: block;
+	padding: 5px;
+
+}
+
+	
+

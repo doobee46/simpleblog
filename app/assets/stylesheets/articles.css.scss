@@ -1,0 +1,267 @@
+// Place all the styles related to the Articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.grid_3{
+	margin-right: 0px;
+}
+.grid_9{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.ads img{
+   padding: 10px 8px 15px ;
+}
+
+.content{
+	background-color:rgb(233,233,233);
+	width:699px;
+	height:1061px;
+	padding-bottom: 20px;
+
+}
+
+.post{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 430px;
+	height: 100%;
+}
+
+.post2{
+	margin-top: 20px;
+	margin-left: 15px;
+	width: 520px;
+	height: 100%;
+}
+
+.article{
+	padding-top: 15px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #BBBBBB;
+}
+h1.post_title {
+	font-family:Cabin;
+	font-size:25px;
+	line-height:120%;
+	color:rgb(51,83,80);
+	text-align:left;
+	margin-bottom: 3px;
+	text-transform:capitalize;
+	
+}
+
+.post_details{
+	font-family:Cabin;
+	font-size:12px;
+	line-height:120%;
+	color:rgb(68,68,68);
+	text-align:left;
+}
+
+h3.post_details span.author{
+	font-family:Cabin;
+	font-size:13px;
+	line-height:120%;
+	color:rgb(56,89,83);
+	text-align:left;
+}
+h3.post_details span.comments{
+	font-family:Cabin;
+	font-size:12px;
+	line-height:120%;
+	color:rgb(137,48,54);
+	text-align:left;
+
+}
+.post_body{
+	font-family:Cabin;
+	font-size:13px;
+	line-height:20px;
+	color:rgb(102,102,102);
+	text-align:left;
+
+}
+.article a{
+	font-family:Cabin;
+	font-size:12px;
+	line-height:120%;
+	color:rgb(52,84,80);
+	text-align:left;
+	float: right;
+	text-decoration: none;
+	text-transform:capitalize;
+}
+
+.aside_right{
+  padding-top: 40px;
+}
+
+.rss_feed{
+	margin-bottom: 10px;
+}
+
+.rss_feed a{
+	font-family:Cabin;
+	font-size:14px;
+	line-height:120%;
+	color:rgb(0,76,102);
+	text-align:left;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.twitter_feed a{
+    font-family:"Cabin";
+	font-size:14px;
+	line-height:120%;
+	color:rgb(0,76,102);
+	text-align:left;
+	text-decoration: none;
+	text-transform: capitalize;
+}
+.recents{
+	padding-top: 30px;
+}
+
+.recent_title{
+	width:180px;
+	font-family:"Cabin";
+	font-size:13px;
+	line-height:120%;
+	color:rgb(52,84,80);
+	text-align:left;
+	padding-bottom:4px;
+	border-bottom: 1px solid rgb(187,187,187);
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+ul.recent_list{
+	list-style-type:none;
+	margin-top:-15px;
+	
+}
+
+ul.recent_list  li{
+	margin:0px;
+	padding: 5px;
+	width:160px; 
+	border-bottom: 1px solid rgb(187,187,187);
+}
+
+ul.recent_list li:last-child{
+  border-bottom: none
+}
+
+ul.recent_list a{
+	font-family:Cabin;
+	font-size:10px;
+	line-height:120%;
+	color:rgb(51,83,80);
+	text-align:left;
+	text-decoration: none;
+	text-transform:capitalize;
+}
+
+ul.cat_list{
+	list-style-type:none;
+}
+
+ul.cat_list li{
+	margin:0px;
+	padding: 5px 10px ;
+	width:160px; 
+	
+}
+
+ul.cat_list li a{
+	font-family:Cabin;
+	font-size:13px;
+	line-height:120%;
+	color:rgb(255,255,255);
+	text-align:left;
+	text-decoration:none;
+}
+
+.loc_details{
+	font-family:Cabin;
+	font-size:12px;
+	line-height:120%;
+	color:rgb(136,136,136);
+	text-align:left;
+	margin-top:-15px;
+	font-weight:thin;
+	text-transform:capitalize;
+}
+
+.btn-red {
+    
+    
+    background-color:rgb(137,48,54);
+    border: 1px solid rgb(146, 12, 18);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px -1px rgba(0, 0, 0, 0.11);
+    font-family:"Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-decoration: none;
+    font-size: 1px;
+    text-transform: capitalize;
+    padding: 7px;
+    cursor: pointer;
+    font-size: 13px;
+    text-align: center;
+    white-space: nowrap;
+    margin-top:11px;
+ 
+}
+
+.btn-red:active{
+    
+    box-shadow: 0px 1px 7px 0px rgba(0, 0, 0, 0.5) inset;
+    background-color:rgb(137,48,54);
+    border-color: rgb(153, 22, 27);
+    text-shadow: 0px 1px rgba(0, 0, 0, 0.6);
+
+}
+input[type="email"],
+input[type="password"] {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    width: 239px;
+    height: 27px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    -moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 3px;
+    
+}
+textarea {
+  height:auto;
+    
+}
+
+input[type="text"]{
+	background-color: white;
+	border: 1px solid rgb(204, 204, 204);
+	transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	width: 239px;
+	height: 27px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 0px;
+	margin-left: 10px;
+	float: left;
+}
+
+input[type="text"] placeholder{
+	
+}

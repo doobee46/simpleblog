@@ -1,0 +1,50 @@
+<div class="content">
+                            <!--<div class="ads">
+                                <img src="img/ad.png" alt="ad"/>
+                            </div>-->
+                            <div class="grid_5  alpha">
+                                <div class="post">
+                                   <%= render @articles.recent %>
+                                </div>
+                            </div>
+                             <div class="grid_3 push_1 omega ">
+                                <div class="aside_right">
+                                    <div class="rss_feed">
+                                        <%=image_tag "rss.png" %> <%= link_to "Subscribe to my blog feed"%>
+                                    </div>
+                                    <div class="twitter_feed">
+                                        <%= image_tag "twitter.png" %> <%= link_to "follow me on twitter"%>
+                                    </div>
+                                    <div class="recents">
+                                        <h3 class="recent_title"> Recents</h3>
+                                        
+                                        <ul class="recent_list">
+                                            <% @recent.each do |r| %>
+                                                 <li>
+                                                    <%= link_to r.long_title %>
+                                                 </li> 
+                                            <%end%> 
+                                        </ul>
+                                         
+                                    </div>
+                                    <div class="archive">
+                                        <h3 class="recent_title"> Archives</h3>
+                                        <ul class="recent_list">
+                                            <a href=""><li>Web Designer’s Career Outlook</li></a>
+                                            <a href=""><li>Web Designer’s Career Outlook</li></a>
+                                            <a href=""><li>Web Designer’s Career Outlook</li></a>
+                                            <a href=""><li>Web Designer’s Career Outlook</li></a>
+                                        </ul>
+                                    </div>
+
+                                </div>
+
+                            </div>
+       
+
+                    
+
+     
+			           
+						
+
