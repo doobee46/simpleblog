@@ -6,3 +6,4 @@ $(document).ready ->
           $('post_body').trunk8
           lines: 8
           fill: "&hellip;&nbsp;<a href=\"javascript: void(0)\">read more</a>&nbsp;"
+

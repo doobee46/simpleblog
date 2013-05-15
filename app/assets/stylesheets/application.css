@@ -100,12 +100,7 @@ ul.cat_list li a{
 	text-decoration:none;
 }
 
-ul.cat_list li :hover{
-	background-color:rgb(43,46,54);
-	display: block;
-	padding: 5px;
 
-}
 
 	
 

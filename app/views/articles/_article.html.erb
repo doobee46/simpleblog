@@ -2,7 +2,7 @@
     <h1 class="post_title"><%= article.title%></h1>
 
         <h3 class="post_details">
-            Posted <%= time_ago_in_words(article.published_at)+" " +"ago" %><span class="author"> by john Doe<span><span class="comments"> <%= article.comments.count %> comments</span>  
+            Posted <%= time_ago_in_words(article.published_at)+" " +"ago" %> <span class="author">john Doe<span><span class="comments"> <%= article.comments.count %> comments</span>  
         </h3>
         <h3 class="loc_details">
         	<%= image_tag "location.png" %> <%= article.location %>

@@ -127,13 +127,13 @@ h3.post_details span.comments{
 .recent_title{
 	width:180px;
 	font-family:"Cabin";
-	font-size:13px;
+	font-size:12px;
 	line-height:120%;
 	color:rgb(52,84,80);
 	text-align:left;
 	padding-bottom:4px;
 	border-bottom: 1px solid rgb(187,187,187);
-	text-transform: uppercase;
+	text-transform: capitalize;
 	font-weight: bold;
 
 }
@@ -260,8 +260,23 @@ input[type="text"]{
 	padding-left: 0px;
 	margin-left: 10px;
 	float: left;
+	padding-left:3px;
 }
 
-input[type="text"] placeholder{
+.partial_form input[type="text"]{
+  float:none;
+  margin-left: 0px;
+}
+
+h1.edit_title {
+	font-family:Cabin;
+	font-size:25px;
+	line-height:120%;
+	color:rgb(51,83,80);
+	text-align:left;
+	margin-bottom: 15px;
+	text-transform:capitalize;
+	border-bottom:1px solid #BBBBBB;
+	padding-bottom:8px;
 	
 }

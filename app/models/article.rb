@@ -14,7 +14,11 @@ class Article < ActiveRecord::Base
   scope :where_title, lambda {|term| where("articles.title LIKE ?", "%#{term}%")}
 
   def long_title
-  	"#{title}"+" -"+" #{published_at}"
+  	"#{title}" + " " + datereg.to_s 
+  end
+
+  def datereg
+    published_at.to_date
   end
 
   def published?

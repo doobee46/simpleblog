@@ -1,6 +1,20 @@
-<h1>Editing article</h1>
 
-<%= render 'form' %>
+<div class="content">
+    <!--<div class="ads">
+        <img src="img/ad.png" alt="ad"/>
+    </div>-->
+    <div class="grid_10">
+        <div class="post2">
 
-<%= link_to 'Show', @article %> |
-<%= link_to 'Back', articles_path %>
+            <h1 class="edit_title">
+                Editing article
+            </h1>
+
+			<%= render 'form' %>
+
+		<div class="main_actions">
+			<%= link_to 'Show', @article %>|
+			<%= link_to 'Back', articles_path %>
+		</div>                                  
+    </div>
+</div>
