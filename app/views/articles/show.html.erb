@@ -4,21 +4,14 @@
                             </div>-->
                             <div class="grid_10">
                                 <div class="post2">
-                                    <div class="article">
-                                        <h1 class="post_title"><%= @article.title%></h1>
-
-                                            <h3 class="post_details">
-                                                Posted <%= time_ago_in_words(@article.published_at)+" " +"ago" %><span class="author"> by john Doe<span><span class="comments"> <%= @article.comments.count %> comments</span>  
-                                            </h3>
-                                            <h3 class="loc_details">
-                                              <%= image_tag "location.png" %> <%= @article.location %>
-                                            </h3>
-
-                                           <p class ="post_body">
-                                              <%= @article.body %>
-                                           </p>
-                                                 
-                                    </div>
+                                    <%= render @article %>
+ 
+                                      <h3 class="post_title">Comments</h3>
+                                      <div id="comments">
+                                      <%= render @article.comments %>
+                                      </div>
+                                       
+                                      <%= render :file => 'comments/new' %>
                                     <div class="main_actions">
 
                                            <%= link_to 'Edit', edit_article_path(@article) %> |

@@ -1,8 +1,11 @@
 <div class="content">
+   
                             <!--<div class="ads">
                                 <img src="img/ad.png" alt="ad"/>
                             </div>-->
                             <div class="grid_5  alpha">
+                                <%= content_tag :p, notice, :class => 'notice' if notice.present? %>
+                                <%= content_tag :p, alert, :class => 'alert' if alert.present? %>
                                 <div class="post">
                                    <%= render @articles.recent %>
                                 </div>
@@ -22,6 +25,7 @@
                                             <% @recent.each do |r| %>
                                                  <li>
                                                     <%= link_to r.long_title %>
+                                                    
                                                  </li> 
                                             <%end%> 
                                         </ul>

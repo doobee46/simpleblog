@@ -18,7 +18,7 @@ class Article < ActiveRecord::Base
   end
 
   def datereg
-    published_at.to_date
+    published_at.to_formatted_s(:short)
   end
 
   def published?

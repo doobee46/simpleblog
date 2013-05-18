@@ -1,0 +1,20 @@
+    <div class="grid_10">
+        <div class="post2">
+
+		<%= form_for([@article, @article.comments.new]) do |f| %>
+			<div class="partial_form">
+				<%= f.label :name %><br />
+				<%= f.text_field :name %><br />
+				
+				<%= f.label :email %><br />
+				<%= f.text_field :email %><br>
+			
+				
+				<%= f.label :body %><br />
+				<%= f.text_area :body %><br>
+		    </div><br/>
+	
+			<div class="actions">
+			<%= f.submit 'Add' %>
+			</div>
+		<% end %>
