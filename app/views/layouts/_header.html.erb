@@ -9,13 +9,7 @@
                         <div class="category">
                             <h1 class="cat_title"> Categories</h1>
                         </div>
-                        <ul class="cat_list">
-                            <% @category.each do |c| %>
-                                <li>
-                                    <%= link_to c.name %>
-                                </li> 
-                            <%end%> 
-                        </ul> 
+                        
                        
                     </div>
                 </div>
@@ -23,13 +17,18 @@
                 <div class="grid_9 omega">
 
                     <div class="grid_9">
-                        <div class="header">
+                        <div class="header ">
                             
-                            <div>
+                            <div class="grid_5 alpha">
                                <%= render 'articles/search' %>
+                            </div>
+
+                            <div class="homedate grid_3 omega">
+                                <span><%= Time.now.to_formatted_s(:long) %></span>
                             </div>
                           
                         </div>
+                        
                  
                         
                         

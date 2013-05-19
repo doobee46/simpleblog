@@ -2,10 +2,8 @@ class ArticlesController < ApplicationController
   # GET /articles
   # GET /articles.json
   def index
-    @articles = Article.order("published_at DESC, title ASC")
+    @articles = Article.order("published_at desc").page(params[:page]).per_page(4)
     @recent = Article.recent
-    @category = Category.all
-   
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }

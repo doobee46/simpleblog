@@ -17,7 +17,7 @@
 .content{
 	background-color:rgb(233,233,233);
 	width:699px;
-	height:1061px;
+	height:1350px;
 	padding-bottom: 20px;
 
 }
@@ -67,7 +67,7 @@ h3.post_details span.author{
 	color:rgb(56,89,83);
 	text-align:left;
 }
-h3.post_details span.comments{
+h3.post_details span.comments {
 	font-family:Cabin;
 	font-size:12px;
 	line-height:120%;
@@ -279,4 +279,8 @@ h1.edit_title {
 	border-bottom:1px solid #BBBBBB;
 	padding-bottom:8px;
 	
+}
+
+.pages{
+  margin-left:20px;
 }

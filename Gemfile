@@ -6,6 +6,8 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'jquery-rails'
+gem 'will_paginate', '~> 3.0'
+gem 'bootstrap-will_paginate'
 
 group :production do
   gem 'pg'

@@ -4,11 +4,13 @@
                                 <img src="img/ad.png" alt="ad"/>
                             </div>-->
                             <div class="grid_5  alpha">
-                                <%= content_tag :p, notice, :class => 'notice' if notice.present? %>
-                                <%= content_tag :p, alert, :class => 'alert' if alert.present? %>
                                 <div class="post">
-                                   <%= render @articles.recent %>
+                                   <%= render @articles %>
                                 </div>
+                                <div class="pages">
+                                    <%= will_paginate @articles %>
+                                </div>
+                                
                             </div>
                              <div class="grid_3 push_1 omega ">
                                 <div class="aside_right">
@@ -19,18 +21,18 @@
                                         <%= image_tag "twitter.png" %> <%= link_to "follow me on twitter"%>
                                     </div>
                                     <div class="recents">
-                                        <h3 class="recent_title"> Recents</h3>
-                                        
-                                        <ul class="recent_list">
-                                            <% @recent.each do |r| %>
+                                        <h3 class="recent_title"> Recents blogs Posts</h3>
+                                         <ul class="recent_list">
+                                            <% @recent.each do |article| %>
                                                  <li>
-                                                    <%= link_to r.long_title %>
+                                                    <%= link_to article.title , article %>
                                                     
                                                  </li> 
                                             <%end%> 
-                                        </ul>
+                                        </ul>  
                                          
                                     </div>
+
                                     <div class="archive">
                                         <h3 class="recent_title"> Archives</h3>
                                         <ul class="recent_list">
@@ -44,8 +46,10 @@
                                 </div>
 
                             </div>
-       
 
+                            
+               
+                           
                     
 
      

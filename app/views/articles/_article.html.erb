@@ -2,7 +2,7 @@
     <h1 class="post_title"><%= article.title%></h1>
 
         <h3 class="post_details">
-            Posted on <%= article.datereg %> by <span class="author"> john Doe <span><span class="comments"> <%= article.comments.count %> comments</span>  
+            Posted on <%= article.datereg %> by <span class="author"> john Doe <span> | <span class ="comments">  <%=  article.comments.count %> Comments</span>  
         </h3>
         <h3 class="loc_details">
         	<%= image_tag "location.png" %> <%= article.location %>
@@ -11,7 +11,7 @@
        <p class ="post_body">
           <%= article.body %>
        </p>
-
+       
        <%= link_to "read more" ,article %>
 </div>
                                     

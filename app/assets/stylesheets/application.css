@@ -52,7 +52,7 @@ body{
 .aside_menu{
 	background-color:rgb(158,55,62);
 	width:220px;
-	height:1026px;
+	height:1315px;
 	
 }
 
@@ -100,7 +100,17 @@ ul.cat_list li a{
 	text-decoration:none;
 }
 
-
-
+.homedate{
+	padding-top:19px;
+	padding-bottom: 19px;
+	padding-right: 0px;
+}
 	
-
+.homedate span{
+	float: right;
+	font-family:"cabin";
+	font-size:12px;
+	line-height:120%;
+	color:rgb(255,255,255);
+	text-align:left;
+}
