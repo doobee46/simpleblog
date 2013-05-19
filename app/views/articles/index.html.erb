@@ -35,16 +35,14 @@
 
                                     <div class="archive">
                                         <h3 class="recent_title"> Archives</h3>
-                                        <% @posts_by_month.each do |monthname, posts| %>
-                                            <p class="month-archive"><%= monthname %></p>
-                                            <div class="archive">
-                                                <ul class="archive">
-                                                <% posts.each do |post| %>
-                                                <li class="archive"><p class="archive-post"><%= post.title %></p></li>
+                                        <% @post_months.sort.reverse.each do |month, posts| %>
+                                            <h3 class="recent_title" ><%=h month.strftime("%B %Y") %></h3>
+                                            <ul class= "recent_list">
+                                                <%for article in @articles %>
+                                                <li><%=h link_to article.title, article_path(article) %></li>
                                                 <% end %>
-                                                </ul>
-                                            </div>
-                                        <%end%>
+                                            </ul>
+                                        <% end %>
                                     </div>
 
                                 </div>

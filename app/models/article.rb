@@ -23,7 +23,11 @@ class Article < ActiveRecord::Base
 
   def published?
   	published_at.present?
-  end 
+  end
+
+  def to_param
+   "#{id}-#{title.downcase.gsub(/[^a-zA-Z0-9]+/, '-').gsub(/-{2,}/, '-').gsub(/^-|-$/, '')}"
+  end
   
   
 end
