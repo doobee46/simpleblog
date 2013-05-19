@@ -25,6 +25,5 @@ class Article < ActiveRecord::Base
   	published_at.present?
   end 
   
-
- 
+  
 end

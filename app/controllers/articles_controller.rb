@@ -4,6 +4,7 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.order("published_at desc").page(params[:page]).per_page(4)
     @recent = Article.recent
+    @posts_by_month = Article.find(:all, :order => "created_at DESC").group_by { |post| post.created_at.strftime("%B %Y")}
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @articles }

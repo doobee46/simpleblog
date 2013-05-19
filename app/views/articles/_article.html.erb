@@ -9,7 +9,7 @@
         </h3>
 
        <p class ="post_body">
-          <%= article.body %>
+          <%= truncate article.body, length: 320 %>
        </p>
        
        <%= link_to "read more" ,article %>

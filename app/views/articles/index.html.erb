@@ -15,7 +15,7 @@
                              <div class="grid_3 push_1 omega ">
                                 <div class="aside_right">
                                     <div class="rss_feed">
-                                        <%=image_tag "rss.png" %> <%= link_to "Subscribe to my blog feed"%>
+                                        <%=image_tag "rss.png" %> <%= link_to "Subscribe to Rss feed"%>
                                     </div>
                                     <div class="twitter_feed">
                                         <%= image_tag "twitter.png" %> <%= link_to "follow me on twitter"%>
@@ -35,12 +35,16 @@
 
                                     <div class="archive">
                                         <h3 class="recent_title"> Archives</h3>
-                                        <ul class="recent_list">
-                                            <a href=""><li>Web Designer’s Career Outlook</li></a>
-                                            <a href=""><li>Web Designer’s Career Outlook</li></a>
-                                            <a href=""><li>Web Designer’s Career Outlook</li></a>
-                                            <a href=""><li>Web Designer’s Career Outlook</li></a>
-                                        </ul>
+                                        <% @posts_by_month.each do |monthname, posts| %>
+                                            <p class="month-archive"><%= monthname %></p>
+                                            <div class="archive">
+                                                <ul class="archive">
+                                                <% posts.each do |post| %>
+                                                <li class="archive"><p class="archive-post"><%= post.title %></p></li>
+                                                <% end %>
+                                                </ul>
+                                            </div>
+                                        <%end%>
                                     </div>
 
                                 </div>
