@@ -41,7 +41,7 @@
 	padding-bottom: 30px;
 	border-bottom: 1px solid #BBBBBB;
 }
-h1.post_title {
+h1.post_title a {
 	font-family:Cabin;
 	font-size:25px;
 	line-height:120%;
@@ -49,7 +49,14 @@ h1.post_title {
 	text-align:left;
 	margin-bottom: 3px;
 	text-transform:capitalize;
+	padding-bottom:0px;
+	float:left;
+
 	
+}
+
+.post_title{
+	padding-left:0px;
 }
 
 .post_details{
@@ -58,6 +65,7 @@ h1.post_title {
 	line-height:120%;
 	color:rgb(68,68,68);
 	text-align:left;
+	margin-top:-3px;
 }
 
 h3.post_details span.author{
