@@ -8,6 +8,7 @@ gem 'rails', '3.2.13'
 gem 'jquery-rails'
 gem 'will_paginate', '~> 3.0'
 gem 'bootstrap-will_paginate'
+gem 'social-share-button'
 
 group :production do
   gem 'pg'

@@ -4,25 +4,48 @@
                             </div>-->
                             <div class="grid_10">
                                 <div class="post2">
-                                    <%= render @article %>
- 
-                                      <h3 class="post_title"> 
-                                        <span><%= @article.comments.count%></span>
-                                         Comments 
-                                      </h3>
+                                    <div class="show_article">
+                                      <h1 class="show_title">
+                                        <%= @article.title %>
+                                      </h1>
 
-                                      <div id="comments">
-                                      <%= render @article.comments %>
-                                      </div>
-                                       
-                                      <%= render :file => 'comments/new' %>
+                                          <h3 class="post_details">
+                                              Posted on <%= @article.datereg %> by <span class="author"> john Doe <span> | <span class ="comments"><%= image_tag "convo.png" %> <%=  @article.comments.count %> Comments</span>  
+                                          </h3>
+                                          <h3 class="loc_details">
+                                            <%= image_tag "location.png" %> <%= @article.location %>
+                                          </h3>
 
-                                    <div class="main_actions">
+                                         <p class ="post_body">
+                                            <%= @article.body %>
+                                         </p>
+
+                                         <div class="social">
+                                           <%= social_share_button_tag(@article.title) %>
+                                         </div>
+
+                                            
+                                    </div>
+                                        <div class="show_actions">
 
                                            <%= link_to 'Edit', edit_article_path(@article) %> |
                                            <%= link_to 'Back', articles_path %>
 
-                                           </div>
+                                        </div>
+
+                                    
+                                      
+                                      <h3 class="count"> 
+                                        <span ><%= image_tag "convo_large.png" %> <%= @article.comments.count%></span>
+                                         Comments 
+                                      </h3>
+
+                                      <div class="comments">
+                                        <%= render @article.comments %>
+                                      </div>
+                                       
+                                      <%= render :file => 'comments/new' %>
+
                                 </div>
                             </div>
 
