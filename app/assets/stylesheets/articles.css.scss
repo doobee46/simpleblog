@@ -285,9 +285,7 @@ input[type="text"]{
 	float: left;
 	padding-left:3px;
 }
-.partial_form{
-   
-}
+
 
 .partial_form input[type="text"]{
   float:none;
@@ -321,14 +319,79 @@ h1.edit_title {
 	line-height:120%;
 	color:rgb(52,84,80);
 	text-align:left;
-	margin-top:20px;
+	margin-top:35px;
 	padding-top:4px;
 	padding-bottom:3px;
 	border-top:1px solid #BBBBBB;
 	border-bottom:1px solid #BBBBBB;
+	text-transform:uppercase;
 
 }
 
 .show_actions{
    float:right;
+
+}
+
+.show_comments{
+   padding-bottom:3px;
+   border-bottom:1px solid #BBBBBB;
+}
+
+.comment_title{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	line-height:120%;
+	color:rgb(51,83,80);
+	text-align:left;
+	text-transform:capitalize;
+	margin-bottom:0px;
+
+}
+
+.comment_email{
+	font-family:cabin,Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:120%;
+	color:rgb(102,102,102);
+	text-align:left;
+
+}
+.comment_timestamp{
+	font-family:Cabin;
+	font-size:11px;
+	line-height:120%;
+	font-style:italic;
+	color:rgb(153,153,153);
+	text-align:left;
+	text-transform:capitalize;
+	margin-bottom:0px;
+
+}
+.comment_body{
+	font-family:Cabin;
+	font-size:13px;
+	line-height:154%;
+	color:rgb(102,102,102);
+	text-align:left;
+	padding-bottom:2px;
+
+}
+.post3{
+	margin-top: 20px;
+	width: 520px;
+	height: 100%;
+}
+
+.avatar{
+  float:left;
+  margin-right:8px;
+  margin-top:3px;
+}
+
+.comment_form{
+   margin-left:0px;
+}
+.comment_actions{
+  float:right;
 }
