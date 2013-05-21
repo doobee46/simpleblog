@@ -13,5 +13,6 @@
 //= require jquery
 //= require jquery_ujs
 //= require social-share-button
+//= require redactor-rails
 //= require trunk8.js
 //= require_tree .

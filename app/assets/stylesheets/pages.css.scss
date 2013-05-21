@@ -1,0 +1,87 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.dashboard{
+	background-color:rgb(89,96,113);
+	width:698px;
+	height:30px;
+	margin-bottom:15px;
+}
+
+.admin_title{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:120%;
+	color:rgba(255,255,255,0.84);
+	text-align:left;
+	margin-left:5px;
+	margin-top:6px;
+    Text-transform :capitalize;
+}
+
+a.btn-new{
+	background-image:-moz-linear-gradient(33% 0% -90deg,rgb(70,200,9) 0%,rgb(65,193,8) 48%,rgb(58,185,7) 93%,rgb(58,185,7) 98%); 
+	background-image:-webkit-gradient(linear,33% 0%,33% 100%,color-stop(0, rgb(70,200,9)),color-stop(0.48, rgb(65,193,8)),color-stop(0.93, rgb(58,185,7)),color-stop(0.98, rgb(58,185,7)));
+	background-image:-webkit-linear-gradient(-90deg,rgb(70,200,9) 0%,rgb(65,193,8) 48%,rgb(58,185,7) 93%,rgb(58,185,7) 98%);
+	background-image:linear-gradient(-90deg,rgb(70,200,9) 0%,rgb(65,193,8) 48%,rgb(58,185,7) 93%,rgb(58,185,7) 98%);
+	-moz-box-shadow:0px 1px 0px rgba(0,0,0,0.2) ,inset -1px -1px 0px rgba(0,0,0,0.3) ,inset 1px 1px 0px rgba(0,0,0,0.2) ,inset 0px 0px 0px rgba(255,255,255,0.2);
+	-webkit-box-shadow:0px 1px 0px rgba(0,0,0,0.2) ,inset -1px -1px 0px rgba(0,0,0,0.3) ,inset 1px 1px 0px rgba(0,0,0,0.2) ,inset 0px 0px 0px rgba(255,255,255,0.2);
+	box-shadow:0px 1px 0px rgba(0,0,0,0.2) ,inset -1px -1px 0px rgba(0,0,0,0.3) ,inset 1px 1px 0px rgba(0,0,0,0.2) ,inset 0px 0px 0px rgba(255,255,255,0.2);
+	font-family: Arial, "Liberation Sans", FreeSans, sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 5px 18px;
+    cursor: pointer;
+    font-size: 14px;
+    text-align: center;
+    white-space: nowrap;
+    float:right;
+    color:rgb(255,255,255);
+    margin-right:25px;
+
+}
+
+.btn-new:active{
+	
+}
+
+h1.edit_title {
+	font-family:Cabin;
+	font-size:25px;
+	line-height:120%;
+	color:rgb(51,83,80);
+	text-align:left;
+	margin-bottom: 15px;
+	text-transform:capitalize;
+	border-bottom:1px solid #BBBBBB;
+	padding-bottom:8px;
+	
+}
+
+.table a{
+	font-family:Cabin, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:120%;
+	color:rgb(0,48,64);
+	text-align:justify;
+	text-decoration:none;
+
+}
+.table{
+	margin-left:15px;
+}
+
+.listing_title{
+	font-family:Cabin;
+	font-size:25px;
+	line-height:120%;
+	color:rgb(51,83,80);
+	text-align:left;
+	margin-bottom: 5px;
+	text-transform:capitalize;
+	border-bottom:1px solid #BBBBBB;
+	padding-bottom:8px;
+	margin-left:20px;
+}

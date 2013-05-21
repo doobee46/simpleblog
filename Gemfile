@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'will_paginate', '~> 3.0'
 gem 'bootstrap-will_paginate'
 gem 'social-share-button'
+gem 'redactor-rails'
 
 group :production do
   gem 'pg'

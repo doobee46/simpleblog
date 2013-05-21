@@ -11,7 +11,6 @@ class ArticlesController < ApplicationController
     end
   end
 
-
   # GET /articles/1
   # GET /articles/1.json
   def show
@@ -82,7 +81,7 @@ class ArticlesController < ApplicationController
     @article.destroy
 
     respond_to do |format|
-      format.html { redirect_to articles_url }
+      format.html { redirect_to articles_url  }
       format.json { head :no_content }
     end
   end
