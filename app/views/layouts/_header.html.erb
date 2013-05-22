@@ -23,8 +23,9 @@
                                <%= render 'articles/search' %>
                             </div>
 
-                            <div class="homedate grid_3 omega">
-                                <span><%= Time.now.to_formatted_s(:long) %></span>
+                            <div class="homedate  grid_3 omega">
+                                <span><%= Time.now.to_formatted_s(:long)%> welcome, <%=current_user.email%></span>
+
                             </div>
                           
                         </div>

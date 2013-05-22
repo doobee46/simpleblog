@@ -1,0 +1,29 @@
+<h1 class="listing_title">
+		           users Listings
+		        </h1>
+	     <table class="table table-condensed table-hover">
+			 	
+			    <thead>
+				    <tr>
+				    <th>Email</th>
+				    <th>Date signed up</th>
+				    <th>Actions</th>
+				    </tr>
+			    </thead>
+			    <tbody>
+			        <% @users.each do |user| %>		    	
+				    <tr>
+				    <td><%=link_to user.email, user%></td>
+				    <td><%= user.datereg%><td>
+				    <td>
+				    <%= link_to image_tag("edit.png"), edit_user_path(user) %> |
+	                <%= link_to image_tag("trash.png"), user, method: :delete, data:{confirm: "Are you sure you want to delete this posts."}  %>
+	                </td>
+				    </tr>
+				    <%end%>
+			    </tbody>
+	    </table>
+	    <div class="pages">
+            <%= will_paginate @articles %>
+        </div>
+    </div>

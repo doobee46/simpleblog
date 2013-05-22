@@ -106,7 +106,8 @@ ul.cat_list li a{
 	padding-top:19px;
 	padding-bottom: 19px;
 	padding-right: 0px;
-}
+	width: 420px;
+}   
 	
 .homedate span{
 	float: right;

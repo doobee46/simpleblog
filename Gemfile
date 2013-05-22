@@ -10,6 +10,7 @@ gem 'will_paginate', '~> 3.0'
 gem 'bootstrap-will_paginate'
 gem 'social-share-button'
 gem 'redactor-rails'
+gem "bcrypt-ruby", :require => "bcrypt"
 
 group :production do
   gem 'pg'

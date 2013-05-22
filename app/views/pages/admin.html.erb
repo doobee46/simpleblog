@@ -1,5 +1,6 @@
 <div class="dashboard grid_9">
 	<h3 class="admin_title"> Admin dashboard</h3>
+	
 </div>
 
 	<%= link_to 'Post new', new_article_path , class: "btn-new"%>
@@ -11,31 +12,6 @@
 				<h1 class="listing_title">
 		           Article Listings
 		        </h1>
-	     <table class="table table-condensed table-hover">
-			 	
-			    <thead>
-				    <tr>
-				    <th>Title</th>
-				    <th>Published Date</th>
-				    <th>Comments</th>
-				    <th>Actions</th>
-				    </tr>
-			    </thead>
-			    <tbody>
-			        <% @articles.each do |article| %>		    	
-				    <tr>
-				    <td><%=link_to article.title, article%></td>
-				    <td><%= article.datereg%></td>
-				    <td><%= article.comments.count%></td>
-				    <td>
-				    <%= link_to image_tag("edit.png"), edit_article_path(article) %> |
-	                <%= link_to image_tag("trash.png"), article, method: :delete, data:{confirm: "Are you sure you want to delete this posts."}  %>
-	                </td>
-				    </tr>
-				    <%end%>
-			    </tbody>
-	    </table>
-	    <div class="pages">
-            <%= will_paginate @articles %>
-        </div>
-    </div>
+		    <%= render 'listing'%>
+	        <%= render 'user'%>
+        

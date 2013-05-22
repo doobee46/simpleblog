@@ -1,6 +1,8 @@
 Blog::Application.routes.draw do
 
   
+  get "sign_up" => "users#new", :as => "sign_up"
+
   mount RedactorRails::Engine => '/redactor_rails'
 
   root :to => 'articles#index'
