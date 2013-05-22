@@ -28,6 +28,16 @@ class Article < ActiveRecord::Base
   def to_param
    "#{id}-#{title.downcase.gsub(/[^a-zA-Z0-9]+/, '-').gsub(/-{2,}/, '-').gsub(/^-|-$/, '')}"
   end
+
+  def self.search(search)
+    if search
+      find(:all, :conditions => ['title LIKE ?', "%#{search}%"])
+    else
+      find(:all)
+    end
+  end
+
+
   
   
 end

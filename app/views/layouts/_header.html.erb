@@ -20,11 +20,18 @@
                         <div class="header ">
                             
                             <div class="grid_5 alpha">
-                               <%= render 'articles/search' %>
+
+                                <%= form_tag articles_path, :method => 'get' do %>
+                                
+                                    <%= text_field_tag :search, params[:search] %>
+                                    <%= submit_tag "Search" , :name => nil, class: "btn-red"%>
+                                  
+                                <% end %>
+                           
                             </div>
 
                             <div class="homedate  grid_3 omega">
-                                <span><%= Time.now.to_formatted_s(:long)%> welcome, <%=current_user.email%></span>
+                                <span><%= Time.now.to_formatted_s(:long)%> </span>
 
                             </div>
                           

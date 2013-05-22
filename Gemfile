@@ -12,6 +12,7 @@ gem 'social-share-button'
 gem 'redactor-rails'
 gem 'bcrypt-ruby', :require => "bcrypt"
 gem "carrierwave"
+gem "highcharts-rails", "~> 3.0.1.5"
 
 
 group :production do
