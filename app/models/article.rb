@@ -1,8 +1,9 @@
 class Article < ActiveRecord::Base
-  attr_accessible :body, :excerpt, :location, :published_at, :title
+  attr_accessible :body, :excerpt, :location, :published_at, :title, :slug
 
   validates :title, :presence => true
   validates :body, :presence => true
+  validates_presence_of :slug
 
   belongs_to :user
   has_many   :comments
@@ -26,7 +27,7 @@ class Article < ActiveRecord::Base
   end
 
   def to_param
-   "#{id}-#{title.downcase.gsub(/[^a-zA-Z0-9]+/, '-').gsub(/-{2,}/, '-').gsub(/^-|-$/, '')}"
+    slug
   end
 
   def self.search(search)
