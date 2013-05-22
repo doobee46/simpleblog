@@ -55,7 +55,6 @@ class ArticlesController < ApplicationController
   # POST /articles
   # POST /articles.json
   def create
-    params[:article][:body]= sanitize_redactor(params[:article][:body])
     @article = Article.new(params[:article])
     @category = Category.all
 
@@ -98,16 +97,7 @@ class ArticlesController < ApplicationController
     end
   end
 
-  private
-
-  def sanitize_redactor(orig_input)
-    stripped = view_context.strip_tags(orig_text)
-    if stripped.present? # this prevents from creating empty comments
-      view_context.sanitize(orig_text, tags: REDACTOR_TAGS, attributes: REDACTOR_ATTRIBUTES)
-    else
-      nil
-    end
-  end 
+  
 
   
 end
