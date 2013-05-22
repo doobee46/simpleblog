@@ -1,15 +1,5 @@
 class ArticlesController < ApplicationController
   before_filter :authenticate, :except => [:index, :show]
-
-  REDACTOR_TAGS = %w(code span div label a br p b i del strike u img video audio
-                  iframe object embed param blockquote mark cite small ul ol li
-                  hr dl dt dd sup sub big pre code figure figcaption strong em
-                  table tr td th tbody thead tfoot h1 h2 h3 h4 h5 h6)
-  REDACTOR_ATTRIBUTES = %w(href)
-
-  # ...
-
-
   # GET /articles
   # GET /articles.json
   def index
@@ -27,6 +17,7 @@ class ArticlesController < ApplicationController
   def show
     @article = Article.find_by_slug(params[:id])
     @category = Category.all
+    @title = @article.title
 
     respond_to do |format|
       format.html # show.html.erb
