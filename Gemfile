@@ -5,12 +5,12 @@ gem 'rails', '3.2.13'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'jquery-rails'
-gem 'will_paginate', '~> 3.0'
-gem 'bootstrap-will_paginate'
-gem 'social-share-button'
-gem 'redactor-rails'
-gem 'bcrypt-ruby', :require => "bcrypt"
+gem "jquery-rails"
+gem "will_paginate", "~> 3.0"
+gem "bootstrap-will_paginate"
+gem "social-share-button"
+gem "redactor-rails"
+gem "bcrypt-ruby", :require => "bcrypt"
 gem "carrierwave"
 gem "mini_magick", "~>3.4.0"
 gem "highcharts-rails", "~> 3.0.1.5"
