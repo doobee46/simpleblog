@@ -14,6 +14,9 @@ gem "carrierwave"
 gem "mini_magick", "~>3.4.0"
 gem "highcharts-rails", "~> 3.0.1.5"
 gem "taps", "~> 0.3.23"
+gem "devise"
+gem "faker"
+
 
 
 group :production do

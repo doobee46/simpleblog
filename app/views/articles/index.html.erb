@@ -4,11 +4,14 @@
                                 <img src="img/ad.png" alt="ad"/>
                             </div>-->
                             <div class="grid_5  alpha">
+                                <div class="pages">
+                                    <%= will_paginate @articles,class: 'pagination pagination-mini' %>
+                                </div>
                                 <div class="post">
                                    <%= render @articles %>
                                 </div>
                                 <div class="pages">
-                                    <%= will_paginate @articles %>
+                                    <%= will_paginate @articles, class: 'pagination pagination-mini' %>
                                 </div>
                                 
                             </div>

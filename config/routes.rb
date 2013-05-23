@@ -1,6 +1,8 @@
 Blog::Application.routes.draw do
 
   
+  devise_for :users
+
   get "sign_up" => "users#new", :as => "sign_up"
 
   mount RedactorRails::Engine => '/redactor_rails'
@@ -10,9 +12,6 @@ Blog::Application.routes.draw do
     resources :comments
   end
   resources :users
-  resource :session
-  match '/login'  => "sessions#new",     :as=> "login"
-  match '/logout' => "sessions#destroy", :as=> "logout"
   match 'admin', :to => "pages#admin", :as => :admin
   
 end

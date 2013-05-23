@@ -17,6 +17,6 @@ def destroy
 end
 private
 	def load_article
-	@article = Article.find(params[:article_id])
+	@article = Article.find_by_slug(params[:article_id])
 	end
 end

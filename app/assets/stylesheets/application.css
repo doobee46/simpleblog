@@ -39,6 +39,26 @@ body{
 	padding-top: 18px;
 
 }
+.nav_main ul{
+	list-style-type: none;
+	margin: 0; padding: 0;
+	float: right;
+}
+
+.nav_main ul li{
+	float: left;
+}
+
+.nav_main ul li a{
+	display:block;
+	padding: 0 20px;
+	color:rgb(255,255,255);
+	font-size: 14px;
+	text-decoration:none;
+	line-height: 63px;
+	text-transform: capitalize;
+	font-family:"Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+}
 .logo a{
 	text-decoration: none;
 	color:rgb(255,255,255);

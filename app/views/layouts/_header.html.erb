@@ -17,7 +17,7 @@
                 <div class="grid_9 omega">
 
                     <div class="grid_9">
-                        <div class="header ">
+                        <div class="header grid_9 ">
                             
                             <div class="grid_5 alpha">
 
@@ -30,9 +30,32 @@
                            
                             </div>
 
-                            <div class="homedate  grid_3 omega">
-                                <span><%= Time.now.to_formatted_s(:long)%> </span>
+                            <div class="grid_3 push_1 omega">
+                                <div class="nav_main">
+                                  <ul>
+                                     <%if user_signed_in? %>
+                                        <li>
+                                            <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+                                        </li>
 
+                                        <li>
+                                            <%= link_to "Admin", admin_path %>
+                                        </li>
+                                         
+                                        <% else %>
+                                           
+                                        <li>
+                                            <%= link_to "Login", new_user_session_path %>
+                                         </li>
+
+                                         <li>
+                                            <%= link_to "Register", new_user_registration_path %>
+                                         </li>
+                                            
+                                            
+                                        <% end %>
+                                    </ul>
+                                </div>
                             </div>
                           
                         </div>
