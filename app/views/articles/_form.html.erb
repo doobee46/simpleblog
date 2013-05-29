@@ -13,32 +13,32 @@
 
   <div class="partial_form">
     
-    <%= f.label :slug %><br/>
-    <%= f.text_field :slug %></br/>   
+    <%= f.label :slug %>
+    <%= f.text_field :slug %>
 
-    <%= f.label :title %><br/>
-    <%= f.text_field :title %></br/>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
   
   
-    <%= f.label :location %><br/>
-    <%= f.text_field :location %><br/>
+    <%= f.label :location %>
+    <%= f.text_field :location %>
  
   
-    <%= f.label :excerpt %><br/>
-    <%= f.text_field :excerpt %><br/>
+    <%= f.label :excerpt %>
+    <%= f.text_field :excerpt %>
 
   
-    <%= f.label :body %><br/>
+    <%= f.label :body %>
     <%= f.text_area :body ,:class => "redactor", :cols => 79, :rows => 20%><br/><br/>
   
   
-    <%= f.label :published_at %><br/>
-    <%= f.datetime_select :published_at %><br/><br/>
+    <%= f.label :published_at %>
+    <%= f.datetime_select :published_at %>
 
   </div>
  
 
-  <div class="actions">
-    <%= f.submit %>
+  <div class="form-actions">
+    <%= f.submit "Post", class: "btn btn-success" %>
   </div>
 <% end %>

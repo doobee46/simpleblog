@@ -18,9 +18,7 @@
 	padding-top: 42px;
 	padding-bottom: 42px;
 }
-body{
- background-color: #2B2E36;
-}
+
 .aside{
 	background-color:rgb(137,48,54);
 	width:220px;
@@ -64,11 +62,11 @@ body{
 	color:rgb(255,255,255);
 }
 .logo_sub{
-	font-family:"Steelfish Rg";
-	font-size:22px;
+	font-family:"Helvetica Neue";
+	font-size:13px;
 	color:rgb(255,255,255);
 	text-align:center;
-	margin-top:-20px;
+	margin-top:-35px;
 
 }
 .aside_menu{

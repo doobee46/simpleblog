@@ -1,32 +1,16 @@
 <div class="post3">
 	<div class="show_comments">
-		<div class="avatar">
-			<%= image_tag "avatar.png" %>
-		</div>
-		<h3 class="comment_title">
-			 <%= comment.name %> &lt;<span class="comment_email"><%= comment.email %></span>&gt; said:
-		</h3> 
-
-		<div>
-		   <h3 class="comment_timestamp">
-		   	Posted on: <%= time_ago_in_words(comment.created_at)+" "+"ago" %>
-		   </h3>
-		</div>
-		<div class="comment_body">
-		   <%=comment.body%>
-		   <span class='comment_actions'><%= link_to image_tag("trash.png"), article_comment_path(:article_id => @article, :id => comment), :confirm => 'Are you sure?', :method => :delete %>
-		</span> 
-		</div>
-
-
-		
-	</div>
-
-
-
-
-
-
+    <div class="media">
+	    <a class="pull-left" href="#">
+	    	
+	    </a>
+	    <div class="media-body">
+		    <h4 class="media-heading comment_email"><%= comment.email %> said : <br /><span class="comment_timestamp"> Posted on: <%= time_ago_in_words(comment.created_at)+" "+"ago" %></span></h4>
+		    <%= comment.body%>
+		    <span class='comment_actions'><%= link_to image_tag("trash.png"), article_comment_path(:article_id => @article, :id => comment), :confirm => 'Are you sure?', :method => :delete %>
+			   </span> 
+	    </div>
+    </div>
 
 
         

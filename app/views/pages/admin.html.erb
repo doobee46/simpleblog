@@ -1,5 +1,5 @@
 <div class="dashboard grid_9">
-	<h3 class="admin_title"> Admin dashboard</h3>
+	<h3 class="admin_title"> Admin dashboard  ::<span> welcome <%= link_to current_user.name, edit_user_registration_path %></h3>
 	
 </div>
 
@@ -16,5 +16,4 @@
 		           Article Listings
 		        </h1>
 		    <%= render 'listing'%>
-	        <%= render 'user'%>
-        
+	        

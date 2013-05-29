@@ -16,6 +16,7 @@ gem "highcharts-rails", "~> 3.0.1.5"
 gem "taps", "~> 0.3.23"
 gem "devise"
 gem "faker"
+gem 'gravtastic'
 
 
 

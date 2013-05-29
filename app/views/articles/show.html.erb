@@ -27,11 +27,11 @@
                                             
                                     </div>
                                         <div class="show_actions">
-                                           <%if current_user == @article.user%>
+                                           
                                            <%= link_to "edit", edit_article_path(@article) %> |
-                                           <%else%>
+                                         
                                            <%= link_to 'Back', articles_path %>
-                                           <%end%>
+                                         
 
                                         </div>
 

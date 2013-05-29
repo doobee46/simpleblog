@@ -16,7 +16,7 @@
 
 .content{
 	background-color:rgb(233,233,233);
-	width:699px;
+	width:700px;
 	height:1405px;
 	padding-bottom: 20px;
 
@@ -37,7 +37,7 @@
 }
 
 .article{
-	padding-top: 10px;
+	padding-top: 5px;
 	padding-bottom: 30px;
 	border-bottom: 1px solid #BBBBBB;
 }
@@ -58,6 +58,7 @@ h1.post_title a {
 	text-transform:capitalize;
 	padding-bottom:0px;
 	float:left;
+	text-decoration:none;
 
 	
 }
@@ -150,13 +151,13 @@ h3.post_details span.comments {
 .recent_title{
 	width:180px;
 	font-family:"Cabin";
-	font-size:12px;
+	font-size:11px;
 	line-height:120%;
 	color:rgb(52,84,80);
 	text-align:left;
 	padding-bottom:4px;
 	border-bottom: 1px solid rgb(187,187,187);
-	text-transform: capitalize;
+	text-transform:uppercase;
 	font-weight: bold;
 
 }
@@ -246,44 +247,7 @@ ul.cat_list li a{
     text-shadow: 0px 1px rgba(0, 0, 0, 0.6);
 
 }
-input[type="email"],
-input[type="password"] {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgb(204, 204, 204);
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
-    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
-    width: 239px;
-    height: 27px;
-    margin-top: 6px;
-    margin-bottom: 10px;
-    -moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
-    -webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
-    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
-    font-size: 12px;
-    font-weight: normal;
-    padding-left: 3px;
-    
-}
-textarea {
-  height:auto;
-    
-}
 
-input[type="text"]{
-	background-color: white;
-	border: 1px solid rgb(204, 204, 204);
-	transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
-	width: 239px;
-	height: 27px;
-	margin-top: 12px;
-	margin-bottom: 10px;
-	font-size: 12px;
-	font-weight: normal;
-	padding-left: 0px;
-	margin-left: 10px;
-	float: left;
-	padding-left:3px;
-}
 
 
 .partial_form input[type="text"]{
@@ -331,10 +295,9 @@ h1.edit_title {
    float:right;
 
 }
-
 .show_comments{
-   padding-bottom:3px;
-   border-bottom:1px solid #BBBBBB;
+   padding-bottom:2px;
+   
 }
 
 .comment_title{
@@ -382,12 +345,6 @@ h1.edit_title {
 	height: 100%;
 }
 
-.avatar{
-  float:left;
-  margin-right:8px;
-  margin-top:3px;
-}
-
 .comment_form{
    margin-left:0px;
 }
@@ -403,4 +360,54 @@ h1.edit_title {
 	margin-left:20px;
 	margin-top:35px;
 	
+}
+
+.comment{
+	float:right
+}
+
+.media{
+	border-bottom:1px solid #BBBBBB;
+	paddin-bottom:3px;
+}
+input[type="email"],
+input[type="password"] {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset;
+    transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+    width: 239px;
+    height: 27px;
+    margin-top: 6px;
+    margin-bottom: 3px;
+    -moz-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 1px 2px rgba(0,0,0,0.5);
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 3px;
+    
+}
+textarea {
+  height:auto;
+    
+}
+
+input[type="text"]{
+	background-color: white;
+	border: 1px solid rgb(204, 204, 204);
+	transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+	width: 239px;
+	height: 27px;
+	margin-top: 12px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 0px;
+	margin-left: 10px;
+	float: left;
+	padding-left:3px;
+}
+.listing{
+	margin-left:25px;
 }
