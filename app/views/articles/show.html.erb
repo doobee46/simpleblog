@@ -17,7 +17,7 @@
                                           </h3>
 
                                          <p class ="post_body">
-                                            <%= simple_format @article.body %>
+                                            <%= sanitize @article.body %>
                                          </p>
 
                                          <div class="social">
@@ -38,7 +38,7 @@
                                     
                                       
                                       <h3 class="count"> 
-                                        <span ><%= image_tag "convo_large.png" %> <%= @article.comments.count%></span>
+                                        <span > <%= @article.comments.count%></span>
                                          Comments 
                                       </h3>
 

@@ -6,11 +6,10 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-
-                   
 				   
 Category.create [{:name => 'Programming'},
-                {:name => 'Event'},
+                {:name => 'Tech'},
                 {:name => 'Startup'},
                 {:name => 'Gadget'},
-                {:name => 'TV'}]
+                {:name => 'TV'},
+                 {:name => 'Quick tips'}]

@@ -11,7 +11,7 @@
         </h3>
 
        <p class ="post_body">
-          <%=truncate article.body, length: 320 %>
+          <%= sanitize(truncate article.body, length: 320 )%>
        </p>
        <div class="tweet_btn">
           
