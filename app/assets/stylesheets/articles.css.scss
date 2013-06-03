@@ -45,7 +45,7 @@
 }
 
 .show_article{
-	padding-top: 15px;
+	padding-top: 0px;
 	padding-bottom: 30px;
 	
 }
@@ -426,5 +426,6 @@ input[type="text"]{
 .info p{
 	text-align:justify;
 	font-size:13px;
+	white-space:none
 }
 
