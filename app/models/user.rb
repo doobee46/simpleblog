@@ -14,22 +14,22 @@ class User < ActiveRecord::Base
   attr_accessible :name, :email, :password, :password_confirmation, :remember_me
   # attr_accessible :title, :body
 
-    validates :email, :uniqueness => true,
+  validates :email, :uniqueness => true,
 				  :length => { :within => 5..50 },
 				  :format => { :with => /^[^@][\w.-]+@[\w.-]+[.][a-z]{2,4}$/i }
-	validates :password, :confirmation => true,
+  validates :password, :confirmation => true,
 						 :length => { :within => 4..20 },
 						 :presence => true
 						 
 	 
-	has_one :profile
-	has_many :articles, :order => 'published_at DESC, title ASC',
-	:dependent => :nullify
-	has_many :replies, :through => :articles, :source => :comments
+  has_one :profile
+  has_many :articles, :order => 'published_at DESC, title ASC',
+  :dependent => :nullify
+  has_many :replies, :through => :articles, :source => :comments
 
-	def datereg
-	  created_at.to_formatted_s(:long)
-	end
+  def datereg
+	created_at.to_formatted_s(:long)
+  end
 
 
 	 

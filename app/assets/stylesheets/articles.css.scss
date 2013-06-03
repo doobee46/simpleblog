@@ -198,7 +198,7 @@ ul.cat_list li{
 	
 }
 
-ul.cat_list li a{
+ul.cat_list li {
 	font-family:Cabin;
 	font-size:13px;
 	line-height:120%;
@@ -431,3 +431,12 @@ input[type="text"]{
 	color:#666666;
 }
 
+.checkbox{
+   padding-right:10px;
+   margin-bottom:20px;
+}
+
+label.checkbox.inline{
+    padding-left:0px;
+	padding-left:0px;
+}

@@ -5,6 +5,7 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.order("published_at desc").page(params[:page]).per_page(5).search(params[:search])
     @recent = Article.recent
+    @category = Category.all
     @post_months = @articles.group_by { |t| t.published_at.beginning_of_month }
     respond_to do |format|
       format.html # index.html.erb

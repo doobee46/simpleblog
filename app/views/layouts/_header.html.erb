@@ -12,10 +12,15 @@
                     <div class="aside_menu">
                         <div class="category">
                             <h1 class="cat_title"> Categories</h1>
-                            
-                        </div>
-                        
-                       
+                            <ul class="cat_list">
+                            <% @category.each do |c|%>
+                                <li>
+                                    <%= c.name %> <span>(<%=c.articles.size%>)</span>
+                                <li/>
+                            <%end%>
+
+                            </ul>                            
+                        </div>       
                     </div>
                 </div>
                 
@@ -51,11 +56,11 @@
                                            
                                         <li>
                                             <%= link_to "Login", new_user_session_path %>
-                                         </li>
+                                        </li>
 
-                                         <li>
+                                        <li>
                                             <%= link_to "Register", new_user_registration_path %>
-                                         </li>
+                                        </li>
                                             
                                             
                                         <% end %>

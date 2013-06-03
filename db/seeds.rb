@@ -12,4 +12,4 @@ Category.create [{:name => 'Programming'},
                 {:name => 'Startup'},
                 {:name => 'Gadget'},
                 {:name => 'TV'},
-                 {:name => 'Quick tips'}]
+                {:name => 'Quick tips'}]
