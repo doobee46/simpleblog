@@ -1,23 +1,26 @@
 <div class="content">
    
-                            <!--<div class="ads">
-                                <img src="img/ad.png" alt="ad"/>
-                            </div>-->
+                            <div class="ads">
+                              <%= ad_unit(:banner, "ca-pub-2898674254191377", {:slot => "2127616124"}) %>
+                            </div>
+
                             <div class="grid_5  alpha">
-                               <div class="pages">
-                                <%= will_paginate @articles, class: " pagination pagination-mini"%>
-                               </div>
+
+                            <div class="pages">
+                                <%= will_paginate @articles, class: " pagination pagination-mini grid_9"%>
+                            </div>
                                 
                                 <div class="post">
                                    <%= render @articles %>
                                 </div>
 
-                                <div class="pages">
-                                <%= will_paginate @articles, class: " pagination pagination-mini" %>
-                                </div>
-                               
-                                
+                            <div class="pages">
+                                <%= will_paginate @articles, class: " pagination pagination-mini grid_9"%>
                             </div>
+
+                            </div>
+
+                             
                              <div class="grid_3 push_1 omega ">
                                 <div class="aside_right">
                                     <div class="info">

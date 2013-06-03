@@ -10,8 +10,8 @@
 	margin-right: 0px;
 }
 
-.ads img{
-   padding: 10px 8px 15px ;
+.ads{
+   padding: 0px 0px 0px 20px ;
 }
 
 .content{
@@ -19,6 +19,7 @@
 	width:700px;
 	height:1405px;
 	padding-bottom: 20px;
+	padding-top:15px;
 
 }
 
@@ -38,8 +39,9 @@
 
 .article{
 	padding-top: 5px;
-	padding-bottom: 30px;
+	padding-bottom:30px;
 	border-bottom: 1px solid #BBBBBB;
+	
 }
 
 .show_article{
@@ -48,7 +50,7 @@
 	
 }
 
-h1.post_title a {
+.post_title h1 {
 	font-family:Cabin;
 	font-size:25px;
 	line-height:120%;
@@ -57,10 +59,8 @@ h1.post_title a {
 	margin-bottom: 3px;
 	text-transform:capitalize;
 	padding-bottom:0px;
-	float:left;
 	text-decoration:none;
-
-	
+   	
 }
 
 .show_title{
@@ -75,7 +75,7 @@ h1.post_title a {
 	
 }
 
-.post_details{
+.post_details h3{
 	font-family:Cabin;
 	font-size:12px;
 	line-height:120%;
@@ -84,14 +84,14 @@ h1.post_title a {
 	margin-top:-3px;
 }
 
-h3.post_details span.author{
+.post_details h3 span.author{
 	font-family:Cabin;
 	font-size:13px;
 	line-height:120%;
 	color:rgb(56,89,83);
 	text-align:left;
 }
-h3.post_details span.comments {
+.post_details h3 span.comments {
 	font-family:Cabin;
 	font-size:12px;
 	line-height:120%;
@@ -100,10 +100,8 @@ h3.post_details span.comments {
 
 }
 p.post_body{
-	font-family:Cabin;
 	font-size:13px;
 	line-height:20px;
-	color:rgb(102,102,102);
 	text-align:justify;
 
 }
@@ -209,7 +207,7 @@ ul.cat_list li a{
 	text-decoration:none;
 }
 
-.loc_details{
+.loc_details h3{
 	font-family:Cabin;
 	font-size:12px;
 	line-height:120%;
@@ -426,8 +424,7 @@ input[type="text"]{
 }
 
 .info p{
-    font-family:Cabin;
 	text-align:justify;
-	color:rgb(102,102,102);
 	font-size:13px;
 }
+
